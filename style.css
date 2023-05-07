@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;800&family=Inter:wght@400;500;700&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,600;0,700;0,800;0,900;1,100;1,200;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 320px;
+    height: 320px;
+    background-image: url('pexels-photo-11432837.jpeg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.container .heart{
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    opacity: 0;
+}
+
+.heart.active{
+    opacity: 1;
+    font-size: 60px;
+    animation: animate 0.8s ease forwards;
+}
+
+
+@keyframes animate{
+    30%{
+        opacity: 1;
+        font-size: 80px;
+    }
+    50%{
+        opacity: 1;
+        font-size: 60px;
+    }
+    70%{
+        opacity: 1;
+        font-size: 70px;
+    }
+    80%{
+        opacity: 1;
+        font-size: 60px;
+    }
+    90%{
+        opacity: 1;
+        font-size: 60px;
+    }
+}
